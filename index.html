@@ -19,14 +19,16 @@
     <header id="header" class="container-fluid">
         <div class="row header-row">
             <div class="col-lg-6 col-md-6">
-                <img id="header-img" class="img-responsive" src="https://i.pinimg.com/originals/59/ec/a1/59eca1719784ded19465c668e40f26a3.jpg" alt="" >
-            </div>
+                <div class="header-img-container">
+                    <img id="header-img" class="img-responsive" src="https://i.pinimg.com/originals/59/ec/a1/59eca1719784ded19465c668e40f26a3.jpg" alt="" >
+                </div>
+            </div>    
             <div class="col-lg-6 col-md-6 nav-bar-container">
                 <nav id="nav-bar">
                     <ul>
-                        <li><a href="#feature-title">Features</a></li>
-                        <li><a href="#">How it works</a></li>
-                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#features-section">Why Go With Us</a></li>
+                        <li><a href="#video-section">Video</a></li>
+                        <li><a href="#pricing-section">Pricing</a></li>
                     </ul>
                 </nav>
             </div>
@@ -43,8 +45,8 @@
     </section>
     
     <!-- Features -->
-    <section class="container">
-        <h2 id="feature-title" class="text-center">Features</h2>
+    <section id="features-section" class="container">
+        <h2 class="section-title">Why Go With Us</h2>
         
         <div class="row feature">
             <div class="col-lg-2 col-md-2">
@@ -81,6 +83,75 @@
             <div class="col-lg-10 col-md-10">
                 <div class="feature-desc">
                     right
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video -->
+    <section id="video-section">
+        <h2 class="section-title">Video</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GHKczMenmB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing-section" class="container">
+        <h2 class="section-title">Pricing</h2>
+        
+        <div class="row pricing">
+            <div class="col-lg-4 col-md-4">
+                <div class="price-card">
+                    <div class="pc-title">Basic Training</div>
+                    <div class="pc-cost">$200</div>
+                    <div class="pc-list">
+                        <ul>
+                            <li>Shake paw</li>
+                            <li>Fetch</li>
+                            <li>Sit</li>
+                            <li>Stay</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-select" type="submit">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="price-card">
+                    <div class="pc-title">Circus Training</div>
+                    <div class="pc-cost">$400</div>
+                    <div class="pc-list">
+                        <ul>
+                            <li>Play dead</li>
+                            <li>Roll over</li>
+                            <li>Walk on hind legs</li>
+                            <li>Ballance ball on nose</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-select" type="submit">Select</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <div class="price-card">
+                    <div class="pc-title">Advanced Training</div>
+                    <div class="pc-cost">$999</div>
+                    <div class="pc-list">
+                        <ul>
+                            <li>Speak Japanese</li>
+                            <li>Do homework</li>
+                            <li>Take out the trash</li>
+                            <li>Meal prep</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="btn btn-select" type="submit">Select</button>
+                    </div>
                 </div>
             </div>
         </div>
