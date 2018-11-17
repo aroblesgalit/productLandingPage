@@ -26,9 +26,9 @@
             <div class="col-lg-6 col-md-6 nav-bar-container">
                 <nav id="nav-bar">
                     <ul>
-                        <li><a href="#features-section">Why Go With Us</a></li>
-                        <li><a href="#video-section">Video</a></li>
-                        <li><a href="#pricing-section">Pricing</a></li>
+                        <li><a class="nav-link" href="#features-section">Why Go With Us</a></li>
+                        <li><a class="nav-link" href="#video-section">Video</a></li>
+                        <li><a class="nav-link" href="#pricing-section">Pricing</a></li>
                     </ul>
                 </nav>
             </div>
@@ -36,12 +36,12 @@
     </header>
     
     <!-- Email Subscription -->
-    <section>
-        <div class="subscribe">
-            <h2>Subscribe now for more info</h2>
-            <input class="form-control text-center" type="email" name="email" placeholder="Enter your email here" />
+    <section id="subscribe-section">
+        <form id="form">
+            <label for="email">Enter your email for more info</label>
+            <input id="email" class="form-control text-center" type="email" name="email" placeholder="Enter your email here" />
             <button class="btn" type="submit">Submit</button>
-        </div>
+        </form>
     </section>
     
     <!-- Features -->
@@ -92,7 +92,7 @@
     <section id="video-section">
         <h2 class="section-title">Video</h2>
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GHKczMenmB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/GHKczMenmB8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </section>
 
@@ -156,6 +156,17 @@
             </div>
         </div>
     </section>
+
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <p>Copyright 2018, Elite Dog Training</p>
+    </footer>
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

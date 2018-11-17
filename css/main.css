@@ -20,11 +20,11 @@ body {
 
 .header-img-container {
     width: 100%;
-    height: 100%;
+    height: 70px;
 }
   
 #header-img {
-    width: 50%;
+    height: 100%;
 }
   
 .nav-bar-container {
@@ -43,21 +43,43 @@ body {
     justify-content: space-around;
     align-items: flex-end;
 }
+
+.nav-link {
+    color: #303030;
+}
+
+#subscribe-section {
+    margin: 120px 0 60px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
   
-.subscribe {
-    height: auto;
+#subscribe-section form {
     width: 600px;
-    margin: 100px auto;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
   
-.subscribe h2 {
-    margin-bottom: 20px;
+#subscribe-section form label {
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: lighter;
 }
   
-.subscribe button {
+#subscribe-section button {
     margin-top: 20px;
-    background-color: #ccff00;
+    background-color: #ffbd29;
+    color: #fff;
+    font-weight: bold;
+    width: 140px;
+    font-size: 16px;
+}
+
+.subscribe button:hover, .btn-select:hover {
+    background-color: #d8991d;
+    color: #fff;
 }
 
 #features-section, #pricing-section {
@@ -141,6 +163,42 @@ body {
     width: 140px;
     font-size: 16px;
     margin: 20px 0 30px 0;
+}
+
+footer {
+    color: #fff;
+    height: 100px;
+    background-color: #303030;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-links {
+    width: 200px;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-links a {
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ffbd29;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 10px;
 }
 
 @media only screen and (max-width: 1100px) {
