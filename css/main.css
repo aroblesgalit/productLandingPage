@@ -5,7 +5,8 @@ body {
   
 #header {
     width: 100%;
-    height: 70px;
+    min-height: 70px;
+    height: auto;
     padding: 0;
     background-color: #fff;
     position: fixed;
@@ -32,7 +33,7 @@ body {
 }
   
 #nav-bar {
-    height: 100%;
+    height: 70px;
     padding-bottom: 10px;
 }
   
@@ -68,16 +69,19 @@ body {
     font-weight: lighter;
 }
   
-#subscribe-section button {
+#submit {
     margin-top: 20px;
     background-color: #ffbd29;
     color: #fff;
     font-weight: bold;
     width: 140px;
     font-size: 16px;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
 }
 
-.subscribe button:hover, .btn-select:hover {
+#submit:hover, .btn-select:hover {
     background-color: #d8991d;
     color: #fff;
 }
@@ -95,21 +99,29 @@ body {
 }
 
 .feature {
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto;
     margin-top: 40px;
 }
   
 .feature-img {
-    width: 100%;
+    width: 100px;
     height: 100px;
-    background-color: blue;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #ffbd29;
+    margin: 0 auto;
 }
   
 .feature-desc {
     width: 100%;
-    height: 100px;
-    background-color: red;
+    height: auto;
+}
+
+.feature-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
   
 .video-container {
@@ -212,9 +224,24 @@ footer p {
         width: 340px;
         margin: 20px auto;
     }
+
+    #features-section {
+        text-align: center;
+    }
+
+    .feature-img {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 470px) {
+    #nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: space-between;
+    }
+
     .pricing {
         padding: 0 10px;
     }

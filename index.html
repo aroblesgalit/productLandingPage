@@ -18,12 +18,12 @@
 <body>
     <header id="header" class="container-fluid">
         <div class="row header-row">
-            <div class="col-lg-6 col-md-6">
+            <div class="col-xs-6">
                 <div class="header-img-container">
                     <img id="header-img" class="img-responsive" src="https://i.pinimg.com/originals/59/ec/a1/59eca1719784ded19465c668e40f26a3.jpg" alt="" >
                 </div>
             </div>    
-            <div class="col-lg-6 col-md-6 nav-bar-container">
+            <div class="col-xs-6 nav-bar-container">
                 <nav id="nav-bar">
                     <ul>
                         <li><a class="nav-link" href="#features-section">Why Go With Us</a></li>
@@ -37,10 +37,10 @@
     
     <!-- Email Subscription -->
     <section id="subscribe-section">
-        <form id="form">
+        <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
             <label for="email">Enter your email for more info</label>
-            <input id="email" class="form-control text-center" type="email" name="email" placeholder="Enter your email here" />
-            <button class="btn" type="submit">Submit</button>
+            <input id="email" class="form-control text-center" type="email" name="email" placeholder="Enter your email here" pattern="/^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" />
+            <input type="submit" id="submit" />
         </form>
     </section>
     
@@ -51,12 +51,13 @@
         <div class="row feature">
             <div class="col-lg-2 col-md-2">
                 <div class="feature-img">
-                    left
+                    <img class="img-responsive" src="https://static.thenounproject.com/png/18093-200.png" alt="Certified icon" />
                 </div>
             </div>
             <div class="col-lg-10 col-md-10">
                 <div class="feature-desc">
-                    right
+                    <div class="feature-title">Certified Trainers</div>
+                    <p>We are Southern California's largest clicker training school of positive reinforcement. We offer group classes, private lessons, day school lessons, seminars, board & train programs, and training for life programs.</p>
                 </div>
             </div>
         </div>
@@ -64,12 +65,13 @@
         <div class="row feature">
             <div class="col-lg-2 col-md-2">
                 <div class="feature-img">
-                    left
+                    <img class="img-responsive" src="https://image.flaticon.com/icons/png/512/80/80630.png" alt="24/7 icon" />
                 </div>
             </div>
             <div class="col-lg-10 col-md-10">
                 <div class="feature-desc">
-                    right
+                    <div class="feature-title">Staffed 24/7</div>
+                    <p>'Round the clock monitoring and supervision! We offer late pick-up until 9:00 pm every day of the week. We can even provide canine transportation to and from your house. Watch your dog on our WaggerCams!</p>
                 </div>
             </div>
         </div>
@@ -77,12 +79,13 @@
         <div class="row feature">
             <div class="col-lg-2 col-md-2">
                 <div class="feature-img">
-                    left
+                    <img class="img-responsive" src="https://mbtskoudsalg.com/images/computer-icons-png-3.png" alt="Computer icon" />
                 </div>
             </div>
             <div class="col-lg-10 col-md-10">
                 <div class="feature-desc">
-                    right
+                    <div class="feature-title">Online Convenience</div>
+                    <p>You can log into your own client portal to access canine report cards, book or change upcoming reservations, sign up for dog training classes, complete paperwork, and pay - all online!</p>
                 </div>
             </div>
         </div>
